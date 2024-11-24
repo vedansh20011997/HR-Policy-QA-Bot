@@ -66,6 +66,6 @@ ________________________________________________________________________________
 Application logs can be accessed at root directory - app.logs
 ___________________________________________________________________________________________________________________________________________________________________________________
 
-Evaluation results - 
+Evaluation results - <br>
 <img width="612" alt="image" src="https://github.com/user-attachments/assets/e8a5e058-ce25-447e-9ed6-34977ad39aea">
 

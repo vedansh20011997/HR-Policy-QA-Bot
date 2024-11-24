@@ -2,29 +2,29 @@
 This is QA Bot made with the help of RAG architecture exploiting all the individual search components
 
 Directory structure-
-── README.md <br>
+|── README.md <br>
 ├── dockerfile <br>
 ├── inference.py <br>
 ├── main.py <br>
 ├── .env <br>
 ├── requirements.txt <br>
 ├── src <br>
-│   ├── evaluation <br>
-│   │   ├── evaluation_framework.py <br>
-│   │   ├── ground_truth_creation.py <br>
-│   │   └── ground_truth_data.json <br>
-│   ├── generator <br>
-│   │   ├── generation.py <br>
-│   │   └── system_prompt_template.py <br>
-│   ├── indexer <br>
-│   │   └── es_indexer.py <br>
-│   ├── parser_and_chunk_creator <br>
-│   │   └── pdf_chunk_creator.py <br>
-│   ├── reranker <br>
-│   │   └── reranker.py <br>
-│   └── retreiver <br>
-│       ├── es_retreiver.py <br>
-│       └── get_policy_name.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── evaluation <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── evaluation_framework.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── ground_truth_creation.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── ground_truth_data.json <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── generator <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── generation.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── system_prompt_template.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── indexer <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── es_indexer.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── parser_and_chunk_creator <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── pdf_chunk_creator.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├── reranker <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── reranker.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── retreiver <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├── es_retreiver.py <br>
+&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; └── get_policy_name.py <br>
 └── startup.sh <br>
 
 How to start the QA fastapi rest API - 

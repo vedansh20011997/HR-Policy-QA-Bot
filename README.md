@@ -1,5 +1,6 @@
 # HR-Policy-QA-Bot
 This is QA Bot made with the help of RAG architecture exploiting all the individual search components
+<img width="1073" alt="image" src="https://github.com/user-attachments/assets/f3be4187-b6d2-4064-a316-25b41105a7c6">
 
 Directory structure-<br>
 |── README.md <br>
@@ -64,3 +65,6 @@ ________________________________________________________________________________
 
 Application logs can be accessed at root directory - app.logs
 ___________________________________________________________________________________________________________________________________________________________________________________
+
+Evaluation results - 
+<img width="612" alt="image" src="https://github.com/user-attachments/assets/4910442e-5da0-4179-a6df-c47e42dd26c3">

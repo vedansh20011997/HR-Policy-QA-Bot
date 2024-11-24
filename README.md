@@ -26,6 +26,7 @@ Directory structure-
 &nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; ├── es_retreiver.py <br>
 &nbsp;│&nbsp;&nbsp;&nbsp;&nbsp; └── get_policy_name.py <br>
 └── startup.sh <br>
+___________________________________________________________________________________________________________________________________________________________________________________
 
 How to start the QA fastapi rest API - 
 1. git clone https://github.com/vedansh20011997/HR-Policy-QA-Bot.git
@@ -33,26 +34,33 @@ How to start the QA fastapi rest API -
 2. cd HR-Policy-QA-Bot
 3. chmod +X startup.sh
 4. bash ./startup.sh
+___________________________________________________________________________________________________________________________________________________________________________________
 
 How to manually start the api - 
 $ python main.py
 This runs the API at port 8000
+___________________________________________________________________________________________________________________________________________________________________________________
 
 How to run a sample request after the app is running - 
 $ python inference.py
+___________________________________________________________________________________________________________________________________________________________________________________
 
 How to do indexing - 
 1. Set the PDF_DIRECTORY and index_name parameter in the .env where the pdfs are located
 2. cd src/indexer
 3. $ python es_indexer.py
+___________________________________________________________________________________________________________________________________________________________________________________
 
 How to create the evaluation dataset - 
 1. cd src/evaluation/
 2. $ python ground_truth_creation.py
 A sample of 100 ground truth samples are placed at - src/evaluation/ground_truth_data.json
+___________________________________________________________________________________________________________________________________________________________________________________
 
 All the individual scripts are capable of running on their own. 
 Just move to the folder and run - 
 $ python {script_name}.py
+___________________________________________________________________________________________________________________________________________________________________________________
 
 Application logs can be accessed at root directory - app.logs
+___________________________________________________________________________________________________________________________________________________________________________________

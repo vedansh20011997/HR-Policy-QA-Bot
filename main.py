@@ -39,13 +39,21 @@ app.add_middleware(
 )
 
 # Initialize QABot instance
+
+# There are 5 retreival statergies under "retreival_statergy" - "bm25", "dense", "splade", "hybrid_dense_splade", "hybrid_dense_bm25"
+# Reranking can be enabled or disabled using "reranking_enabled" param
+# Pre-filtering can be enabled or disabled using pre_filtering_required param
+
 try:
     bot = QABot(
             es_cloud_id=os.getenv("ELASTIC_CLOUD_ID"),
             es_api_key=os.getenv("ELASTIC_API_KEY"),
             openai_api_key=os.getenv("openai_api_key"),
             index_name=os.getenv("index_name"),
-            retreival_statergy="dense"
+            retreival_statergy="dense",
+            reranking_enabled=True,
+            pre_filtering_required=True,
+            generation_temperature=0.1
     )
 except Exception as e:
     logger.error(f"Failed to initialize QABot: {str(e)}")

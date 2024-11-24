@@ -86,7 +86,7 @@ if __name__ == "__main__":
         es_cloud_id=os.getenv("ELASTIC_CLOUD_ID"),
         es_api_key=os.getenv("ELASTIC_API_KEY"),
         openai_api_key=os.getenv("openai_api_key"),
-        index_name="hr_policies_new"
+        index_name=os.getenv("index_name")
     )
 
     # Search using different methods

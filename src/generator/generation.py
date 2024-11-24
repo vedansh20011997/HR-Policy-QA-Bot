@@ -167,7 +167,7 @@ if __name__ == "__main__":
             es_cloud_id=os.getenv("ELASTIC_CLOUD_ID"),
             es_api_key=os.getenv("ELASTIC_API_KEY"),
             openai_api_key=os.getenv("openai_api_key"),
-            index_name="hr_policies_new",
+            index_name=os.getenv("index_name"),
             retreival_statergy="dense"
     )
     response = bot.get_answer("What is the policy on sick leaves?")

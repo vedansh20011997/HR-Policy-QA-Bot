@@ -155,7 +155,7 @@ class QABot(PolicyClassifier, ElasticSearchRetreiver, ReRanker):
         contexts_with_metadata = [{
             "chunks": x['_source']['content'],
             "_id": x['_id'],
-            "_score": x['_score'],
+            "_score": str(x['_score']),
             "source": x['_source']['metadata']['pdf_source'],
             "page": "1"
         } for x in context['hits']['hits'][:self.few_shots_count]]

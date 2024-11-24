@@ -11,9 +11,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set up logging
+log_file = "app.log"  # Specify your log file name
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_file),  # Log to file
+        logging.StreamHandler()          # Log to console
+    ]
 )
 logger = logging.getLogger(__name__)
 
@@ -39,7 +44,7 @@ try:
             es_cloud_id=os.getenv("ELASTIC_CLOUD_ID"),
             es_api_key=os.getenv("ELASTIC_API_KEY"),
             openai_api_key=os.getenv("openai_api_key"),
-            index_name="hr_policies_new",
+            index_name=os.getenv("index_name"),
             retreival_statergy="dense"
     )
 except Exception as e:
@@ -82,6 +87,7 @@ async def ask_question(request: QuestionRequest):
             "response": result["response"],
             "sources": result["sources"]
         }
+        logger.info("Response - ", str(response))
         
         logger.info("Successfully generated response")
         return response

@@ -2,14 +2,14 @@
 This is QA Bot made with the help of RAG architecture exploiting all the individual search components
 
 Directory structure-
-── README.md \n
-├── dockerfile \n
-├── inference.py
-├── main.py
-├── .env
-├── requirements.txt
-├── src
-│   ├── evaluation
+── README.md <br>
+├── dockerfile <br>
+├── inference.py <br>
+├── main.py <br>
+├── .env <br>
+├── requirements.txt <br>
+├── src <br>
+│   ├── evaluation <br>
 │   │   ├── evaluation_framework.py
 │   │   ├── ground_truth_creation.py
 │   │   └── ground_truth_data.json

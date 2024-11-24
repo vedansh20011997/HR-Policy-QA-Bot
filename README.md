@@ -66,6 +66,26 @@ ________________________________________________________________________________
 Application logs can be accessed at root directory - app.logs
 ___________________________________________________________________________________________________________________________________________________________________________________
 
+Directories explaintion - 
+1. src - this contains all the code
+   a. src/parser_and_chunk_creator/pdf_chunk_creator.py - Code for parsing the pdf files and chunking them
+   b. src/indexer/es_indexer.py - Code for consuming the chunks and indexing into ES according to the mapping defined.
+   c. src/retreiver
+     i. get_policy_name.py - Code for assigning a policy type tag to the user_query enabling pre-filtering
+     ii. es_retreiver.py - Code for fetching the relevant chunks for ES given a user_query. Five strategies are explored here
+   d. src/reranker/reranker.py - Code for re-ranking the top-k documents received from retreiver
+   e. src/generator/generation.py - Few shot generation using the context received from retreival + reranker
+   f. src/evaluation
+     i. grouth_truth_creation.py - Code for generating the ground truth questions for random 100 chunks from ES
+     ii. evaluation_framework.py - Based on ground truth data obtained, compare 20 statergies based on relevance and performance metrics
+ 2. inference.py - Running this script posts a request to get running API at port 8000
+ 3. main.py - main driver code that initiated and runs a fastapi server
+    swagger_url - http://localhost:8000/docs#/default/ask_question_api_ask_post
+ 4. dockerfile
+ 5. requirements.txt
+ 6. startup.sh - shell script to run docker commands
+___________________________________________________________________________________________________________________________________________________________________________________
+
 Evaluation results - <br>
 <img width="612" alt="image" src="https://github.com/user-attachments/assets/e8a5e058-ce25-447e-9ed6-34977ad39aea">
 

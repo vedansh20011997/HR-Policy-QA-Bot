@@ -1,7 +1,7 @@
 # HR-Policy-QA-Bot
 This is QA Bot made with the help of RAG architecture exploiting all the individual search components
 
-Directory structure-
+Directory structure-<br>
 |── README.md <br>
 ├── dockerfile <br>
 ├── inference.py <br>

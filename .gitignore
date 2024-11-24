@@ -1,0 +1,7 @@
+*/*.ipynb*
+*/*/*.ipynb*
+__pycache__
+*/__pycache__
+*/*.pdf
+*/*.env
+src/evaluation/performance_logging

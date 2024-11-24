@@ -10,22 +10,22 @@ Directory structure-
 ├── requirements.txt <br>
 ├── src <br>
 │   ├── evaluation <br>
-│   │   ├── evaluation_framework.py
-│   │   ├── ground_truth_creation.py
-│   │   └── ground_truth_data.json
-│   ├── generator
-│   │   ├── generation.py
-│   │   └── system_prompt_template.py
-│   ├── indexer
-│   │   └── es_indexer.py
-│   ├── parser_and_chunk_creator
-│   │   └── pdf_chunk_creator.py
-│   ├── reranker
-│   │   └── reranker.py
-│   └── retreiver
-│       ├── es_retreiver.py
-│       └── get_policy_name.py
-└── startup.sh
+│   │   ├── evaluation_framework.py <br>
+│   │   ├── ground_truth_creation.py <br>
+│   │   └── ground_truth_data.json <br>
+│   ├── generator <br>
+│   │   ├── generation.py <br>
+│   │   └── system_prompt_template.py <br>
+│   ├── indexer <br>
+│   │   └── es_indexer.py <br>
+│   ├── parser_and_chunk_creator <br>
+│   │   └── pdf_chunk_creator.py <br>
+│   ├── reranker <br>
+│   │   └── reranker.py <br>
+│   └── retreiver <br>
+│       ├── es_retreiver.py <br>
+│       └── get_policy_name.py <br>
+└── startup.sh <br>
 
 How to start the QA fastapi rest API - 
 1. git clone https://github.com/vedansh20011997/HR-Policy-QA-Bot.git
